@@ -19,8 +19,8 @@ Follow these steps to run the project locally:
 
 ### 1. Clone the Repository
 
-git clone https://github.com/MohammedMars/movies-browser-web.git
-cd movies-browser-web
+1. git clone https://github.com/MohammedMars/movies-browser-web.git
+2. cd movies-browser-web
 
 ### 2. Prepare the Project
 

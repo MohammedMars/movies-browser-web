@@ -24,8 +24,8 @@ cd movies-browser-web
 
 ### 2. Prepare the Project
 
-a. npm install
-b. npm run build
-c. npm run start
+1. npm install
+2. npm run build
+3. npm run start
 
 ### 3. Browse the application on http://localhost:3000

@@ -1,0 +1,4 @@
+.topbar {
+  background-color: rgba(248, 249, 250, 0.7);
+  backdrop-filter: blur(10px);
+}

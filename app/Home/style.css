@@ -1,0 +1,8 @@
+.loadingContainer {
+  min-height: 40vh;
+}
+
+.spinner {
+  width: 3rem;
+  height: 3rem;
+}

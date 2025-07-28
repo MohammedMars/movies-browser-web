@@ -103,3 +103,8 @@ a {
 .pagination .page-link:focus {
   box-shadow: none;
 }
+
+.bold-darkred {
+    font-weight: bold !important;
+    color: darkred !important;
+}

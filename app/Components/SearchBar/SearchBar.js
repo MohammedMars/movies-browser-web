@@ -14,9 +14,9 @@ export default function SearchBar() {
     const trimmedQuery = query.trim();
 
     if (trimmedQuery) {
-      router.push(`/Home?s=${trimmedQuery}`);
+      router.push(`/?s=${trimmedQuery}`);
     } else {
-      router.push('/Home');
+      router.push('/');
     }
   };
 

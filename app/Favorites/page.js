@@ -3,9 +3,8 @@
 import { useState, useEffect } from 'react';
 import { useFavorites } from '../Context/FavoritesContext';
 import { getMovieDetails } from '../api/omdbService';
-import MovieList from '../Components/MovieList';
-import ClientPagination from '../Components/ClientPagination';
-
+import MovieList from '../Components/MovieList/MovieList';
+import ClientPagination from '../Components/ClientPagination/ClientPagination';
 export default function FavoritesPage() {
   const { favoriteIds } = useFavorites();
   const [allFavoriteMovies, setAllFavoriteMovies] = useState([]);
@@ -46,8 +45,8 @@ export default function FavoritesPage() {
   return (
     <main className="container py-5">
       <div className="text-center mb-5">
-        <h1 className="display-5 fw-bold">❤️ Favorite Movies</h1>
-        <p className="lead text-body-secondary">Your personal collection of saved movies (<span style={{ color: "darkred", fontWeight: "bold" }}>{currentMovies.length}</span>)</p>
+        <h1 className="display-5 fw-bold">❤️ Favorite <span className='bold-darkred'>M</span>ovies</h1>
+        <p className="lead text-body-secondary">Your personal collection of saved movies (<span className="bold-darkred">{favoriteIds.length}</span>)</p>
       </div>
       {allFavoriteMovies.length > 0 && (
         <div className="row justify-content-center mb-4">

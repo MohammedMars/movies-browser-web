@@ -1,4 +1,4 @@
-import MovieCard from './MovieCard/MovieCard';
+import MovieCard from '../MovieCard/MovieCard';
 export default function MovieList({ movies }) {
   if (!movies || movies.length === 0) {
     return null;

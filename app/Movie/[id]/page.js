@@ -1,8 +1,8 @@
 import { getMovieDetails } from '../../api/omdbService';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-import BackButton from '../../Components/BackButton';
-import FavoriteButton from '../../Components/FavoriteButton';
+import BackButton from '../../Components/BackButton/BackButton';
+import FavoriteButton from '../../Components/FavoriteButton/FavoriteButton';
 import './style.css';
 export default async function MovieDetailsPage({ params }) {
   const movie = await getMovieDetails(params.id);

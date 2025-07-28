@@ -8,7 +8,7 @@ export default function NotFound() {
       <p className="lead text-body-secondary">
         Sorry, we couldn't find the movie you were looking for.
       </p>
-      <Link href="/Home" className="btn btn-primary mt-3">
+      <Link href="/" className="btn btn-primary mt-3">
         Return to Movie Browser
       </Link>
     </div>

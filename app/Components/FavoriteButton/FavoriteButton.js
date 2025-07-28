@@ -1,6 +1,6 @@
 'use client';
 
-import { useFavorites } from '../Context/FavoritesContext';
+import { useFavorites } from '../../Context/FavoritesContext';
 
 export default function FavoriteButton({ movieId }) {
   const { favoriteIds, toggleFavorite } = useFavorites();

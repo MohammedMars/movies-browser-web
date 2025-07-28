@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import './style.css'
 export default function Topbar() {
   const pathname = usePathname();
-  const isHomeActive = pathname === '/Home';
+  const isHomeActive = pathname === '/';
   const isFavoritesActive = pathname === '/Favorites';
   const isContactActive = pathname === '/Contact';
 
@@ -14,7 +14,7 @@ export default function Topbar() {
       className={`navbar navbar-expand-lg navbar-light shadow-sm fixed-top topbar`}
     >
       <div className="container">
-        <Link className="navbar-brand" href="/Home">
+        <Link className="navbar-brand" href="/">
           🎬 Movie Browser
         </Link>
         <button
@@ -31,17 +31,17 @@ export default function Topbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className={`nav-link ${isHomeActive ? 'active' : ''}`} href="/Home">
+              <Link className={`nav-link ${isHomeActive ? 'active bold-darkred' : ''}`} href="/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link ${isFavoritesActive ? 'active' : ''}`} href="/Favorites">
+              <Link className={`nav-link ${isFavoritesActive ? 'active bold-darkred' : ''}`} href="/Favorites">
                 Favorites
               </Link>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link ${isContactActive ? 'active' : ''}`} href="/Contact">
+              <Link className={`nav-link ${isContactActive ? 'active bold-darkred' : ''}`} href="/Contact">
                 Contact
               </Link>
             </li>

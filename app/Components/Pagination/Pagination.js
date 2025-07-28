@@ -39,7 +39,7 @@ export default function Pagination({ currentPage, totalResults, query }) {
     <nav aria-label="Page navigation" className="d-flex justify-content-center mt-5">
       <ul className="pagination">
         <li className={`page-item ${page <= 1 ? 'disabled' : ''}`}>
-          <Link className="page-link" href={`/Home?s=${query}&page=${page - 1}`} aria-label="Previous">
+          <Link className="page-link" href={`/?s=${query}&page=${page - 1}`} aria-label="Previous">
             <i className="bi bi-chevron-left"></i>
           </Link>
         </li>
@@ -50,7 +50,7 @@ export default function Pagination({ currentPage, totalResults, query }) {
             className={`page-item ${page === num ? 'active' : ''} ${typeof num !== 'number' ? 'disabled' : ''}`}
           >
             {typeof num === 'number' ? (
-              <Link className="page-link" href={`/Home?s=${query}&page=${num}`}>
+              <Link className="page-link" href={`/?s=${query}&page=${num}`}>
                 {num}
               </Link>
             ) : (
@@ -60,7 +60,7 @@ export default function Pagination({ currentPage, totalResults, query }) {
         ))}
 
         <li className={`page-item ${page >= totalPages ? 'disabled' : ''}`}>
-          <Link className="page-link" href={`/Home?s=${query}&page=${page + 1}`} aria-label="Next">
+          <Link className="page-link" href={`/?s=${query}&page=${page + 1}`} aria-label="Next">
             <i className="bi bi-chevron-right"></i>
           </Link>
         </li>
